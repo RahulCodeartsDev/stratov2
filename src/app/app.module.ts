@@ -16,6 +16,7 @@ import { WildcardComponent } from './components/wildcard/wildcard.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { MaterialModuleModule } from './material-module/material-module.module';
+import { LoginFooterComponent } from './components/login/login-footer/login-footer.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MaterialModuleModule } from './material-module/material-module.module';
     InfoStep4Component,
     WildcardComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LoginFooterComponent
   ],
   imports: [
     BrowserModule,

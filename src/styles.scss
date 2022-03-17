@@ -40,11 +40,14 @@ $strato-theme: mat.define-light-theme((
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
 *{
   font-family: 'Montserrat', sans-serif;
 }
 
-
+*{
+  box-sizing: border-box;
+}
 .main_container{
   max-width: 1210px;
   width: 100%;
@@ -55,9 +58,26 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 :root{
   --primary-color: #1d589e;
   --white-color: #fff;
+  --link-color: #486aba;
+  --custom-button-color: #163172;
+  --common-color: #454545; 
 }
 a{
   text-decoration: none;
+  color: var(--link-color);
+  
+}
+
+.mat-custom-background-button {
+  background-color: var(--custom-button-color);
+  color: var(--white-color);
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.mat-custom-strock-button {
+  color: #163172;
+  border-color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
   
 }
 
@@ -89,3 +109,5 @@ a{
       }
   }
 }
+
+

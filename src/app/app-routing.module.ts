@@ -23,7 +23,7 @@ const routes: Routes = [
     path: "login-username", component: LoginUsernameComponent
   },
   {
-    path: "login-sedd-phrase", component: LoginSeedPhraseComponent
+    path: "login-seed-phrase", component: LoginSeedPhraseComponent
   },
   {
     path: "info", component: InfoComponent

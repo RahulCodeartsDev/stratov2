@@ -4,6 +4,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99;
     .main_container{
         display: flex;
         justify-content: space-between;
@@ -16,4 +17,10 @@ header{
         }
     }
    
+}
+
+@media only screen and (max-width:750px){
+    .main_container{
+        flex-direction: column;
+    }
 }
