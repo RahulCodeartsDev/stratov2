@@ -39,6 +39,10 @@ $strato-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 
 
 .main_container{
@@ -50,4 +54,38 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 :root{
   --primary-color: #1d589e;
+  --white-color: #fff;
+}
+a{
+  text-decoration: none;
+  
+}
+
+
+.custom_button{
+  a{
+    height: 36px;
+    padding: 10px 50px 10px 24px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 12px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    position: relative;
+      &::before{
+        background-image: url(../src/assets/images/arrow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 29px;
+        height: 29px;
+        border-radius: 100%;
+        background-color: var(--white-color);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 4px;
+        content: "";
+      }
+  }
 }

@@ -1,5 +1,6 @@
 <ng-container 
-*ngIf="router.url === '/login'  || 
+*ngIf="router.url === '/'  ||
+router.url === '/login'  || 
 router.url === '/login-username'  || 
 router.url === '/login-sedd-phrase' ; then loginHeader ; else infoHeader"
 >
@@ -16,8 +17,8 @@ router.url === '/login-sedd-phrase' ; then loginHeader ; else infoHeader"
 <ng-template #infoHeader>
     <header>
         <div class="main_container">
-            <a href="" class="logo"><img src="assets/images/logo.png" alt=""></a>
-            <button class="custom_button">Next page</button>
+            <a href="" class="logo"><img src="assets/images/logo-blue.png" alt=""></a>
+            <div class="custom_button"><a href="">Next page</a></div>
         </div>
     </header>
 </ng-template>
