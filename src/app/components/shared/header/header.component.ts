@@ -8,9 +8,14 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  open:boolean = false;
   constructor( public router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  ham_menu(){
+    this.open= !this.open;
   }
 
 }

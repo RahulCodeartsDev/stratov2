@@ -1,0 +1,285 @@
+.login-info-step3 {
+  background-color: #163172;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-info-step3 .login-info-step3-wraper {
+  height: 95%;
+  width: 98%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-icon {
+  width: 10%;
+  -webkit-box-shadow: 0 0 16px -2px grey;
+          box-shadow: 0 0 16px -2px grey;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-icon .icon {
+  width: 72%;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-icon .icon img {
+  width: 100%;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-icon .menu .menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 44px;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-icon .menu .menu-items .menu-item {
+  line-height: 63px;
+  color: #1e56a0;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-icon .menu .menu-items .menu-item img {
+  width: 23px;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content {
+  width: 100%;
+  position: relative;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eef3f7+0,f9fbfc+100 */
+  background: #eef3f7;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#eef3f7), to(#f9fbfc));
+  background: linear-gradient(to right, #eef3f7 0%, #f9fbfc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef3f7', endColorstr='#f9fbfc',GradientType=1 );
+  /* IE6-9 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload {
+  text-align: center;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload h4 {
+  font-size: 18px;
+  color: #4a4a69;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload p {
+  font-size: 17px;
+  color: #787878;
+  margin: 0 0 22px;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload p#content-text {
+  text-align: left;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload #upload-button {
+  background-color: #1e56a0;
+  padding: 10px 272px 10px 272px;
+  font-size: 17px;
+  z-index: 10;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload .content-upload-wraper {
+  width: 597px;
+  margin: 0 auto;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload .content-upload-wraper .content-upload-area {
+  height: 269px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 10;
+  padding: 0;
+  background: #eff4f8;
+  border: 1px solid #d6d6d6;
+  border-style: dashed;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload .content-upload-wraper input[type='file'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload .content-upload-wraper input[type="file"] + label span.upload-box {
+  width: 100%;
+  height: 200px;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-upload .content-upload-wraper input[type="file"] + label span.upload-box p {
+  font-size: 19px;
+  color: #606060;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-text {
+  text-align: center;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-text p {
+  font-size: 30px;
+  font-family: Myriad Pro;
+  color: #424242;
+  position: relative;
+  line-height: 42px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-text p:before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  background-image: url(../../../../assets/images/semicolon1.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 28%;
+  z-index: 10;
+}
+
+.login-info-step3 .login-info-step3-wraper .login-info-step3-content .content-text p:after {
+  position: absolute;
+  content: "";
+  top: 33px;
+  right: 27%;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../../assets/images/semicolon2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.login-info-step3 .login-info-step3-wraper .custom_button {
+  position: absolute;
+  top: 7%;
+  right: 3%;
+  z-index: 10;
+}
+
+.login-info-step3 .login-info-step3-wraper .custom_button a {
+  height: 36px;
+  padding: 10px 50px 10px 24px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 14px;
+  text-transform: capitalize;
+  border-radius: 50px;
+  position: relative;
+  text-decoration: none;
+}
+
+.login-info-step3 .login-info-step3-wraper .custom_button a::before {
+  background-image: url(../../../../assets/images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  background-color: var(--white-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 4px;
+  content: "";
+}
+
+.login-info-step3 .login-info-step3-wraper::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  background-image: url(../../../../assets/images/back1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 8;
+  width: 33%;
+  height: 100%;
+}
+
+.login-info-step3 .login-info-step3-wraper::after {
+  position: absolute;
+  bottom: 16%;
+  right: 0;
+  content: "";
+  background-image: url(../../../../assets/images/back3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 50%;
+  z-index: 9;
+}
+
+@media only screen and (max-width: 1600px) {
+  .login-info-step1-content {
+    padding: 123px 0 !important;
+  }
+}
+/*# sourceMappingURL=info-step3.component.css.map */

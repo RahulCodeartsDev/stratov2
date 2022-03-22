@@ -1,0 +1,368 @@
+.login-info-step3{
+    background-color: #163172;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login-info-step3-wraper{
+        height: 95%;
+        width: 98%;
+        background-color: #fff;
+        display: flex;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        .login-info-step3-icon{
+            width: 10%;
+            box-shadow: 0 0 16px -2px grey;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .icon{
+                width: 72%;
+                margin: 0 auto;
+                padding-top: 24px;
+                img{
+                    width: 100%;
+                }
+            }
+            .menu{
+                .menu-items{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 44px;
+                    .menu-item{
+                        line-height: 63px;
+                        color: #1e56a0;
+                        img{
+                            width: 23px;
+                        }
+                    }
+                }
+            }
+        }
+        .login-info-step3-content{
+            width: 100%;
+            position: relative;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eef3f7+0,f9fbfc+100 */
+            background: #eef3f7; /* Old browsers */
+            background: -moz-linear-gradient(left,  #eef3f7 0%, #f9fbfc 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  #eef3f7 0%,#f9fbfc 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  #eef3f7 0%,#f9fbfc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef3f7', endColorstr='#f9fbfc',GradientType=1 ); /* IE6-9 */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 0;
+            .content-upload{
+                text-align: center;
+                h4{
+                    font-size: 18px;
+                    color: #4a4a69;
+                    text-align: center;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    z-index: 10;
+                }
+                p{
+                    font-size: 17px;
+                    color: #787878;
+                    margin: 10px 0px 10px;;
+                }
+                p#content-text { 
+                    text-align: left;
+                }
+                #upload-button{
+                    background-color: #1e56a0;
+                    padding: 10px 272px 10px 272px;
+                    font-size: 17px;
+                    z-index: 10;
+                }
+                .content-upload-wraper{
+                    width: 597px;
+                    margin: 0 auto;
+                    .content-upload-area{
+                        height: 269px;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        z-index: 10;
+                        padding: 0;
+                        background: #eff4f8;
+                        border: 1px solid #d6d6d6;
+                        border-style: dashed;
+                    }
+                    input[type='file']{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                    }
+                    input[type="file"] + label span.upload-box{
+                        width: 100%;
+                        height: 200px;
+                        p{
+                            font-size: 19px;
+                            color: #606060;
+                        }
+                    }
+                }
+            }
+            .content-text{
+                text-align: center;
+                p{
+                    font-size: 30px;
+                    font-family: Myriad Pro;
+                    color: #424242;
+                    position: relative;
+                    line-height: 42px;
+                    font-weight: 600;
+                    z-index: 10;
+                }
+                p:before{
+                    position: absolute;
+                    content: "";
+                    top: -3px;
+                    background-image: url(../../../../../../assets/images/semicolon1.png);
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    left: 28%;
+                    z-index: 10;
+                }
+                p:after{
+                    position: absolute;
+                    content: "";
+                    top: 33px;
+                    right: 27%;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../../../../../../assets/images/semicolon2.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    z-index: 10;
+                }
+            }
+        }
+        .custom_button {
+            position: absolute;
+            top: 7%;
+            right: 3%;
+            z-index: 10;
+            a{
+                height: 36px;
+                padding: 10px 50px 10px 24px;
+                background-color: var(--primary-color);
+                color: var(--white-color);
+                font-size: 14px;
+                text-transform: capitalize;
+                border-radius: 50px;
+                position: relative;
+                text-decoration: none;
+                &::before{
+                  background-image: url(../../../../../../assets/images/arrow.png);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 29px;
+                  height: 29px;
+                  border-radius: 100%;
+                  background-color: var(--white-color);
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  margin: auto;
+                  right: 4px;
+                  content: "";
+                }
+            }
+        }
+    }
+    .login-info-step3-wraper::before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        background-image: url(../../../../../../assets/images/back1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 8;
+        width: 33%;
+        height: 100%;
+    }
+    .login-info-step3-wraper::after{
+        position: absolute;
+        bottom: 16%;
+        right: 0;
+        content: "";
+        background-image: url(../../../../../../assets/images/back3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        height: 50%;
+        z-index: 9;
+    }
+}
+
+
+@media only screen and (max-width:1920px){
+    .login-info-step3{
+        .login-info-step3-wraper{
+            .login-info-step3-content{
+                padding: 190px 0;
+                .content-text{
+                    p:before{
+                       left: 34%;
+                    }
+                    p:after{
+                        top: 40px;
+                        right: 35%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1600px){
+    .login-info-step3{
+        .login-info-step3-wraper{
+            .login-info-step3-content{
+                padding: 110px 0;
+                .content-text{
+                    p:before{
+                        left: 30%;
+                    }
+                    p:after{
+                        top: 45px;
+                        right: 32%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1400px){
+    .login-info-step3{
+        .login-info-step3-wraper{
+            .login-info-step3-content{
+                padding: 67px 0;
+                .content-text{
+                    p:before{
+                        left: 27%;
+                    }
+                    p:after{
+                        right: 28%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1300px){
+    .login-info-step3{
+        .login-info-step3-wraper{
+            .login-info-step3-content{
+                .content-text{
+                    p:before{
+                        left: 25%;
+                    }
+                    p:after{
+                        right: 25%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1200px){
+    .login-info-step3{
+        .login-info-step3-wraper{
+            .login-info-step3-content{
+                .content-text{
+                    p:before{
+                        left: 23%;
+                    }
+                    p:after{
+                        right: 23%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1024px){
+    .login-info-step3{
+        .login-info-step3-wraper{
+            .login-info-step3-content{
+                padding: 42px 0;
+                .content-text{
+                    p{
+                        font-size: 28px;
+                        line-height: 35px;
+                    }
+                    p:before{
+                        left: 20%;
+                    }
+                    p:after{
+                        right: 23%;
+                    }
+                }
+                .content-upload{
+                    .content-upload-wraper{
+                        width: 464px;
+                        .content-upload-area{
+                            height: 207px;
+                        }
+                        #upload-button{
+                            padding: 9px 208px 9px 208px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:900px){
+    .login-info-step3{
+        .login-info-step3-wraper{
+            .login-info-step3-content{
+                padding: 30px 0;
+                .content-text{
+                    p{
+                        font-size: 25px;
+                        line-height: 32px;
+                    }
+                    p:before{
+                        left: 19%;
+                    }
+                    p:after{
+                        right: 20%;
+                    }
+                }
+                .content-upload{
+                    h4{
+                        font-size: 18px;
+                    }
+                    .content-upload-wraper{
+                        width: 411px;
+                        .content-upload-area{
+                            
+                        }
+                        #upload-button{
+                            padding: 8px 180px 8px 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-<ng-container 
+<!-- <ng-container 
 *ngIf="router.url === '/'  ||
 router.url === '/login'  || 
 router.url === '/login-username'  || 
@@ -21,7 +21,56 @@ router.url === '/login-seed-phrase' ; then loginHeader ; else infoHeader"
             <div class="custom_button"><a href="">Next page</a></div>
         </div>
     </header>
+</ng-template> -->
+
+
+<ng-container 
+*ngIf="router.url === '/'  ||
+router.url === '/dashboard'  || 
+router.url === '/network'  || 
+router.url === '/hosting' ; then dashboardHeader ; else blankHeader"
+>
+</ng-container>
+<ng-template #dashboardHeader>
+    <div class="left_section">
+        <div class="humbarger" (click)="ham_menu()">
+            <img src="assets/images/list.png" class="list" alt="">
+        </div>
+        <div class="details" [class.open]="open">
+            <a href="" class="logo"><img src="assets/images/logo.png" alt=""></a>
+            <img src="assets/images/close.png" class="cross" (click)="ham_menu()" alt="">
+            <ul class="menu_details">
+                <li>
+                    <a routerLink="/dashboard" routerLinkActive="active">
+                        <img src="assets/images/d1.png" alt="">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/network" routerLinkActive="active">
+                        <img src="assets/images/d2.png" alt="">
+                        Network
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/hosting" routerLinkActive="active"> 
+                        <img src="assets/images/d3.png" alt="">
+                        Hosting
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="assets/images/d1.png" alt="">
+                        Dashboard
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
 </ng-template>
+<ng-template #blankHeader></ng-template>
+
 
 
 

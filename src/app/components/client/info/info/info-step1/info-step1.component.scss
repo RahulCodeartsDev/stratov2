@@ -1,0 +1,565 @@
+.login-info-step1{
+    background-color: #163172;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .login-info-step1-wraper{
+        height: 96%;
+        width: 98%;
+        background-color: #eef3f7;;
+        display: flex;
+        border-radius: 10px;
+        .login-info-step1-icon{
+            background-color: #fff;
+            width: 10%;
+            box-shadow: 0 0 16px -2px grey;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            position: fixed;
+            height: 96%;    
+            transition: all .3s ease-in-out;       
+            z-index: 11;
+            .icon{
+                width: 72%;
+                margin: 0 auto;
+                padding-top: 16px;
+                img{
+                    width: 100%;
+                }
+            }
+            .menu{
+                .menu-items{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 44px;
+                    .menu-item{
+                        line-height: 63px;
+                        color: #1e56a0;                  
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .displayMenu{
+            left: 7px !important;
+            // left: 14px;
+        }
+        .login-info-step1-content{
+            width: 100%;
+            border-radius: 10px;
+            position: relative;
+             /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eef3f7+0,f9fbfc+100 */
+             background: #eef3f7; /* Old browsers */
+             background: -moz-linear-gradient(left,  #eef3f7 0%, #f9fbfc 100%); /* FF3.6-15 */
+             background: -webkit-linear-gradient(left,  #eef3f7 0%,#f9fbfc 100%); /* Chrome10-25,Safari5.1-6 */
+             background: linear-gradient(to right,  #eef3f7 0%,#f9fbfc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef3f7', endColorstr='#f9fbfc',GradientType=1 ); /* IE6-9 */
+            .content-img{
+                width: 27%;
+                position: absolute;
+                bottom: 0;
+                right: 7%;
+                z-index: 10;
+                img{
+                    width: 100%;
+                    margin-bottom: -6px;
+                    position: relative;
+                }
+                img:after{
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    right: 0;
+                    background-image: url(../../../../../../assets/images/back3.png);
+                    width: 325px;
+                    height: 225px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+            .content-text{
+                width: 100%;
+                position: absolute;
+                top: 22%;
+                right: 0;
+                text-align: center;
+                z-index: 10;
+                p{
+                    font-size: 30px;
+                    font-family: Myriad Pro;
+                    color: #424242;
+                    position: relative;
+                    line-height: 42px;
+                    font-weight: 600;
+                }
+                p:before{
+                    position: absolute;
+                    content: "";
+                    top: -3px;
+                    background-image: url(../../../../../../assets/images/semicolon1.png);
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    left: 27%;
+                }
+                p:after{
+                    position: absolute;
+                    content: "";
+                    top: 33px;
+                    right: 28%;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../../../../../../assets/images/semicolon2.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                }
+            }
+            .custom_button{
+                position: absolute;
+                top: 5%;
+                right: 3%;
+                z-index: 10;
+                a{
+                    height: 36px;
+                    padding: 10px 50px 10px 24px;
+                    background-color: var(--primary-color);
+                    color: var(--white-color);
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    border-radius: 50px;
+                    position: relative;
+                    text-decoration: none;
+                    &::before{
+                      background-image: url(../../../../../../assets/images/arrow.png);
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      width: 29px;
+                      height: 29px;
+                      border-radius: 100%;
+                      background-color: var(--white-color);
+                      position: absolute;
+                      top: 0;
+                      bottom: 0;
+                      margin: auto;
+                      right: 4px;
+                      content: "";
+                    }
+                }
+              }
+             .custom-hambar{
+                top: 3%;
+                left: 13%;
+                display: none;
+                width: 26px;
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+                .barImg1{
+                    visibility: visible;
+                }
+                .barImg2{
+                    visibility: hidden;
+                }
+                .hamClose{
+                    visibility: hidden;
+                }
+                .hamOpen{
+                    visibility: visible;
+                }
+             }
+        }
+        .login-info-step1-content::before{
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: '';
+            background-image: url(../../../../../../assets/images/back1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 8;
+            width: 32%;
+            height: 97%;
+            border-radius: 10px;
+        }
+        .login-info-step1-content::after{
+            position: absolute;
+            bottom: 16%;
+            right: 0;
+            content: "";
+            background-image: url(../../../../../../assets/images/back3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 90%;
+            height: 50%;
+            z-index: 9;
+        }
+    }
+}
+
+
+@media only screen and (max-width:1900px) {
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    p:before{
+                        left: 35%;
+                    }
+                    p:after{
+                        right: 35%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1700px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    p:before{
+                        left: 34%;
+                    }
+                    p:after{
+                        right: 33%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1550px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    p:before{
+                        left: 32%;
+                    }
+                    p:after{
+                        right: 31%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1300px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    p:before{
+                        left: 27%;
+                    }
+                    p:after{
+                        right: 27%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1200px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    p:before{
+                        left: 27%;
+                    }
+                    p:after{
+                        right: 27%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1024px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            height: 97%;
+            .login-info-step1-icon{
+                height: 97%;
+            }
+            .login-info-step1-content{
+                .content-text{
+                    p:before{
+                        left: 24%;
+                    }
+                    p:after{
+                        right: 24%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:950px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    p:before{
+                        left: 21%;
+                    }
+                    p:after{
+                        right: 19%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:900px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    right: 2%;
+                    p{
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:800px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            height: 98%;
+            .login-info-step1-icon{
+                height: 98%;
+            }
+            .login-info-step1-content{
+                .content-text{
+                    p:before{
+                        left: 18%;
+                    }
+                    p:after{
+                        right: 16%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+           .login-info-step1-icon{
+               left: -10%;
+           }
+           .login-info-step1-content{
+               .content-text{
+                   right: 0;
+                   p{
+                    font-size: 22px;
+                    line-height: 35px;
+                   }
+                   p:before{
+                    left: 15%;
+                   }
+                   p:after{
+                    right: 13%;
+                   }
+               }
+               .custom-hambar{
+                   display: block;
+                   width: 21px;
+               }
+           }
+        }
+    }
+}
+@media only screen and (max-width:549px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .displayMenu{
+                left: 5px !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+           .login-info-step1-icon{
+               left: -10%;
+           }
+           .login-info-step1-content{
+               .content-text{
+                   top: 37%;
+                   p{
+                    font-size: 18px;
+                    line-height: 28px;
+                   }
+                   p:before{
+                    left: 15%;
+                    width: 15px;
+                    height: 15px;
+                   }
+                   p:after{
+                    right: 14%;
+                    top: 25px;
+                    width: 15px;
+                    height: 15px;
+                   }
+               }
+               .custom_button{
+                a{
+                 padding: 8px 39px 8px 19px;
+                }
+                a:before{
+                width: 27px;
+                height: 27px;
+                }
+            }
+               .custom-hambar{
+                width: 20px;
+               }
+           }
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-icon{
+                width: 13%;
+                left: -14%;   
+            }
+            .login-info-step1-content{
+                .content-text{
+                    p:after{
+                        right: 10%;
+                    }
+                }
+                .custom-hambar{
+                    left: 15%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:400px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    p{
+                        font-size: 16px;
+                        line-height: 27px;
+                    }
+                    p:after{
+                        right: 12%;
+                    }
+                }
+                .custom_button{
+                    a{
+                        padding: 6px 31px 6px 15px;
+                    }
+                    a:before{
+                        right: 3px;
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:350px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    p{
+                        font-size: 15px;
+                    }
+                    p:after{
+                        right: 9%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:349px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .displayMenu{
+                left: 3px !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width:335px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-icon{
+                .menu{
+                    .menu-items{
+                        .menu-item{
+                            img{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+            .login-info-step1-content{
+                .content-text{
+                    p:before{
+                        width: 12px;
+                        height: 12px;
+                    }
+                    p:after{
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+                .custom-hambar{
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:300px){
+    .login-info-step1{
+        .login-info-step1-wraper{
+            .login-info-step1-content{
+                .content-text{
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

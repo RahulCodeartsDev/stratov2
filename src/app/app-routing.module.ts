@@ -1,23 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InfoStep1Component } from './components/info/info-step1/info-step1.component';
-import { InfoStep2Component } from './components/info/info-step2/info-step2.component';
-import { InfoStep3Component } from './components/info/info-step3/info-step3.component';
-import { InfoStep4Component } from './components/info/info-step4/info-step4.component';
-import { InfoComponent } from './components/info/info.component';
-import { LoginSeedPhraseComponent } from './components/login/login-seed-phrase/login-seed-phrase.component';
-import { LoginUsernameComponent } from './components/login/login-username/login-username.component';
-import { LoginComponent } from './components/login/login.component';
+import { InfoStep1Component } from './components/client/info/info/info-step1/info-step1.component';
+import { InfoStep2Component } from './components/client/info/info/info-step2/info-step2.component';
+import { InfoStep3Component } from './components/client/info/info/info-step3/info-step3.component';
+import { InfoStep4Component } from './components/client/info/info/info-step4/info-step4.component';
+import { InfoComponent } from './components/client/info/info/info.component';
+
+import { LoginSeedPhraseComponent } from './components/client/login/login-seed-phrase/login-seed-phrase.component';
+import { LoginUsernameComponent } from './components/client/login/login-username/login-username.component';
+import { LoginComponent } from './components/client/login/login.component';
+import { EntryPointComponent } from './components/entry-point/entry-point.component';
+import { DashboardComponent } from './components/node/dashboard-network/dashboard/dashboard.component';
+import { HostingComponent } from './components/node/dashboard-network/hosting/hosting.component';
+import { NetworkComponent } from './components/node/dashboard-network/network/network.component';
+import { NodeLoginComponent } from './components/node/node-login/node-login.component';
+
+
 import { WildcardComponent } from './components/wildcard/wildcard.component';
 
 
 const routes: Routes = [
   
   {
-    path: "", component: LoginComponent
+    path: "", component: EntryPointComponent
   },
   {
-    path: "login", component: LoginComponent
+    path: "client-login", component: LoginComponent
   },
   {
     path: "login-username", component: LoginUsernameComponent
@@ -39,6 +47,18 @@ const routes: Routes = [
   },
   {
     path: "info-step4", component: InfoStep4Component
+  },
+  {
+    path: "node-login", component: NodeLoginComponent
+  },
+  {
+    path: "dashboard", component: DashboardComponent
+  },
+  {
+    path: "network", component: NetworkComponent
+  },
+  {
+    path: "hosting", component: HostingComponent
   },
   {
     path: "**", component: WildcardComponent
